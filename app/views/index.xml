@@ -1,5 +1,19 @@
 <Alloy>
 	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+		<ListView id="list" defaultItemTemplate="defaultTemplate" onItemClick="onClick">
+			<RefreshControl id="ptr"/>
+			<Templates>
+				<ItemTemplate name="defaultTemplate">
+					<Label bindId="title" class="title"/>
+					<Label bindId="value" class="value"/>
+				</ItemTemplate>
+			</Templates>
+			<ListSection id="section"></ListSection>
+			<FooterView>
+				<View id="loading">
+					<Label text="Loading..."/>
+				</View>	
+			</FooterView>
+		</ListView>
 	</Window>
 </Alloy>

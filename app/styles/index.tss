@@ -1,15 +1,18 @@
-".container": {
-	backgroundColor:"white"
-}
-
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#000"
-}
-
-"#label": {
+".title": {
+	left: 11,
+	right: 11,
 	font: {
-		fontSize: 12
+		fontSize:Alloy.CFG.defaultListFontSize,
+		fontFamily: "Calibri",
+	}
+}
+
+".value": {
+	//color: "#0073ff",
+	color: "#e15d2b",
+	right: 11,
+	font: {
+		fontSize:Alloy.CFG.defaultListFontSize,
+		fontFamily: "PFHandbookPro-Bold"
 	}
 }
